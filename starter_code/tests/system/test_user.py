@@ -1,8 +1,8 @@
 import json
 from typing import Any
 
-from starter_code.models.user import UserModel
-from starter_code.tests.base_test import BaseTest
+from models.user import UserModel
+from tests.base_test import BaseTest
 
 
 class UserTest(BaseTest):
