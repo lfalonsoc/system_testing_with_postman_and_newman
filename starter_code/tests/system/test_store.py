@@ -99,6 +99,6 @@ class StoreTest(BaseTest):
                 self.assertEqual(
                     {'stores': [{'name': 'test',
                                  'items': [
-                                     {'name': 'test','price': 19.99}]}]},
+                                     {'id': 1, 'name': 'test','price': 19.99}]}]},
                     json.loads(response.data)
                 )
