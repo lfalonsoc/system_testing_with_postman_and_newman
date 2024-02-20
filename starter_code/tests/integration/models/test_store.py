@@ -38,7 +38,8 @@ class StoreTest(BaseTest):
     def test_store_json(self) -> None:
         store = StoreModel('test')
         
-        expected:dict[str, str | list[Any]] = {
+        expected:dict[str, str | Any] = {
+            'id': None,
             "name": 'test',
             "items": []
         }
@@ -53,7 +54,8 @@ class StoreTest(BaseTest):
             store.save_to_db()
             item.save_to_db()
         
-            expected: dict[str, str | list[dict[str, str | float]]] = {
+            expected: dict[str, str | Any] = {
+                'id': None,
                 "name": 'test',
                 "items": [{"name": "test_item", "price": 19.99}]
             }
