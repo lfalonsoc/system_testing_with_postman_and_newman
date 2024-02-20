@@ -9,7 +9,7 @@ and makes sure that it is a new, blank database each time.
 from typing import Any
 from unittest import TestCase
 
-from app import app
+from starter_code.app import app
 from db import db
 
 

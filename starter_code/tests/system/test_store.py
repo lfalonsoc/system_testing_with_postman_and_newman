@@ -1,9 +1,9 @@
 import json
 from typing import Any
 
-from models.store import StoreModel
-from tests.base_test import BaseTest
-from models.item import ItemModel
+from starter_code.models.store import StoreModel
+from base_test import BaseTest
+from starter_code.models.item import ItemModel
 
 
 class StoreTest(BaseTest):
